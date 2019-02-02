@@ -4,7 +4,7 @@ Macのデスクトップを一瞬で整理するツールです。
 
 [Download ⬇️](Desktop Cleaner.app)
 
-![gif-anime](material/desktop cleaner.gif)
+![gif-anime](material/desktop_cleaner.gif)
 
 
 
