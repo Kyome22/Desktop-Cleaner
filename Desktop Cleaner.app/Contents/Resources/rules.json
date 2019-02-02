@@ -1,0 +1,10 @@
+[
+    {
+        "isDirectory" : true,
+        "isExtension" : false,
+        "name" : "ターゲットファイル",
+        "condition" : 0,
+        "isMove" : true,
+        "destination" : "目的のディレクトリ"
+    }
+]

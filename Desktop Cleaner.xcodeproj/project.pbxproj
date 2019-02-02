@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C61DDCE2205C073009F6F52 /* HotKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C61DDCD2205C073009F6F52 /* HotKey.framework */; };
+		1C61DDCF2205C073009F6F52 /* HotKey.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C61DDCD2205C073009F6F52 /* HotKey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C61DDD32205C367009F6F52 /* ShortcutField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61DDD22205C367009F6F52 /* ShortcutField.swift */; };
+		1C61DDD52205C479009F6F52 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61DDD42205C479009F6F52 /* DeleteButton.swift */; };
+		1C61DDD92205D5D1009F6F52 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C61DDD62205C76F009F6F52 /* arrow.png */; };
+		1C61DDDA2205D5D1009F6F52 /* delete0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C61DDD82205C76F009F6F52 /* delete0.png */; };
+		1C61DDDB2205D5D1009F6F52 /* delete1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C61DDD72205C76F009F6F52 /* delete1.png */; };
+		1C61DDDD2205E852009F6F52 /* rules.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C61DDDC2205E852009F6F52 /* rules.json */; };
+		1C61DDDF2205E897009F6F52 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61DDDE2205E897009F6F52 /* Rule.swift */; };
+		1CFBF43322002BD300175297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF43222002BD300175297 /* AppDelegate.swift */; };
+		1CFBF43722002BD500175297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CFBF43622002BD500175297 /* Assets.xcassets */; };
+		1CFBF43A22002BD500175297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CFBF43822002BD500175297 /* Main.storyboard */; };
+		1CFBF44622002BD600175297 /* Desktop_CleanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF44522002BD600175297 /* Desktop_CleanerTests.swift */; };
+		1CFBF45122002BD600175297 /* Desktop_CleanerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF45022002BD600175297 /* Desktop_CleanerUITests.swift */; };
+		1CFBF45F22002C2700175297 /* FileIO+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF45E22002C2700175297 /* FileIO+.swift */; };
+		1CFBF4D22204C76500175297 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4D12204C76500175297 /* Extensions.swift */; };
+		1CFBF4D42204E01B00175297 /* CleanerWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4D32204E01B00175297 /* CleanerWC.swift */; };
+		1CFBF4D62204E02E00175297 /* CleanerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4D52204E02E00175297 /* CleanerVC.swift */; };
+		1CFBF4D82204E13300175297 /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4D72204E13300175297 /* PreferencesVC.swift */; };
+		1CFBF4DA2204E14B00175297 /* PreferencesWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4D92204E14B00175297 /* PreferencesWC.swift */; };
+		1CFBF4DC2204F3BA00175297 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4DB2204F3BA00175297 /* CustomImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CFBF44222002BD600175297 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CFBF42722002BD300175297 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CFBF42E22002BD300175297;
+			remoteInfo = "Desktop Cleaner";
+		};
+		1CFBF44D22002BD600175297 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CFBF42722002BD300175297 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CFBF42E22002BD300175297;
+			remoteInfo = "Desktop Cleaner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C61DDD02205C073009F6F52 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1C61DDCF2205C073009F6F52 /* HotKey.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1C61DDCD2205C073009F6F52 /* HotKey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HotKey.framework; sourceTree = "<group>"; };
+		1C61DDD22205C367009F6F52 /* ShortcutField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutField.swift; sourceTree = "<group>"; };
+		1C61DDD42205C479009F6F52 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		1C61DDD62205C76F009F6F52 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		1C61DDD72205C76F009F6F52 /* delete1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete1.png; sourceTree = "<group>"; };
+		1C61DDD82205C76F009F6F52 /* delete0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete0.png; sourceTree = "<group>"; };
+		1C61DDDC2205E852009F6F52 /* rules.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rules.json; sourceTree = "<group>"; };
+		1C61DDDE2205E897009F6F52 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		1CFBF42F22002BD300175297 /* Desktop Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desktop Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFBF43222002BD300175297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CFBF43622002BD500175297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CFBF43922002BD500175297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CFBF43B22002BD500175297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CFBF44122002BD600175297 /* Desktop CleanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desktop CleanerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFBF44522002BD600175297 /* Desktop_CleanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desktop_CleanerTests.swift; sourceTree = "<group>"; };
+		1CFBF44722002BD600175297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CFBF44C22002BD600175297 /* Desktop CleanerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desktop CleanerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFBF45022002BD600175297 /* Desktop_CleanerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desktop_CleanerUITests.swift; sourceTree = "<group>"; };
+		1CFBF45222002BD600175297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CFBF45E22002C2700175297 /* FileIO+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileIO+.swift"; sourceTree = "<group>"; };
+		1CFBF46022004C4D00175297 /* Desktop Cleaner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Desktop Cleaner.entitlements"; sourceTree = "<group>"; };
+		1CFBF4D12204C76500175297 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1CFBF4D32204E01B00175297 /* CleanerWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerWC.swift; sourceTree = "<group>"; };
+		1CFBF4D52204E02E00175297 /* CleanerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerVC.swift; sourceTree = "<group>"; };
+		1CFBF4D72204E13300175297 /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
+		1CFBF4D92204E14B00175297 /* PreferencesWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWC.swift; sourceTree = "<group>"; };
+		1CFBF4DB2204F3BA00175297 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CFBF42C22002BD300175297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C61DDCE2205C073009F6F52 /* HotKey.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFBF43E22002BD600175297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFBF44922002BD600175297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C61DDD12205C078009F6F52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C61DDCD2205C073009F6F52 /* HotKey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C61DDE222063CC9009F6F52 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1CFBF4D32204E01B00175297 /* CleanerWC.swift */,
+				1CFBF4D52204E02E00175297 /* CleanerVC.swift */,
+				1CFBF4DB2204F3BA00175297 /* CustomImageView.swift */,
+				1CFBF4D92204E14B00175297 /* PreferencesWC.swift */,
+				1CFBF4D72204E13300175297 /* PreferencesVC.swift */,
+				1C61DDD22205C367009F6F52 /* ShortcutField.swift */,
+				1C61DDD42205C479009F6F52 /* DeleteButton.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		1CFBF42622002BD300175297 = {
+			isa = PBXGroup;
+			children = (
+				1CFBF43122002BD300175297 /* Desktop Cleaner */,
+				1CFBF44422002BD600175297 /* Desktop CleanerTests */,
+				1CFBF44F22002BD600175297 /* Desktop CleanerUITests */,
+				1CFBF43022002BD300175297 /* Products */,
+				1C61DDD12205C078009F6F52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CFBF43022002BD300175297 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CFBF42F22002BD300175297 /* Desktop Cleaner.app */,
+				1CFBF44122002BD600175297 /* Desktop CleanerTests.xctest */,
+				1CFBF44C22002BD600175297 /* Desktop CleanerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CFBF43122002BD300175297 /* Desktop Cleaner */ = {
+			isa = PBXGroup;
+			children = (
+				1C61DDD62205C76F009F6F52 /* arrow.png */,
+				1C61DDD82205C76F009F6F52 /* delete0.png */,
+				1C61DDD72205C76F009F6F52 /* delete1.png */,
+				1CFBF46022004C4D00175297 /* Desktop Cleaner.entitlements */,
+				1CFBF4D12204C76500175297 /* Extensions.swift */,
+				1CFBF45E22002C2700175297 /* FileIO+.swift */,
+				1C61DDDE2205E897009F6F52 /* Rule.swift */,
+				1CFBF43222002BD300175297 /* AppDelegate.swift */,
+				1C61DDE222063CC9009F6F52 /* UI */,
+				1CFBF43622002BD500175297 /* Assets.xcassets */,
+				1CFBF43822002BD500175297 /* Main.storyboard */,
+				1CFBF43B22002BD500175297 /* Info.plist */,
+				1C61DDDC2205E852009F6F52 /* rules.json */,
+			);
+			path = "Desktop Cleaner";
+			sourceTree = "<group>";
+		};
+		1CFBF44422002BD600175297 /* Desktop CleanerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CFBF44522002BD600175297 /* Desktop_CleanerTests.swift */,
+				1CFBF44722002BD600175297 /* Info.plist */,
+			);
+			path = "Desktop CleanerTests";
+			sourceTree = "<group>";
+		};
+		1CFBF44F22002BD600175297 /* Desktop CleanerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CFBF45022002BD600175297 /* Desktop_CleanerUITests.swift */,
+				1CFBF45222002BD600175297 /* Info.plist */,
+			);
+			path = "Desktop CleanerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CFBF42E22002BD300175297 /* Desktop Cleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CFBF45522002BD600175297 /* Build configuration list for PBXNativeTarget "Desktop Cleaner" */;
+			buildPhases = (
+				1CFBF42B22002BD300175297 /* Sources */,
+				1CFBF42C22002BD300175297 /* Frameworks */,
+				1CFBF42D22002BD300175297 /* Resources */,
+				1C61DDD02205C073009F6F52 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Desktop Cleaner";
+			productName = "Desktop Cleaner";
+			productReference = 1CFBF42F22002BD300175297 /* Desktop Cleaner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CFBF44022002BD600175297 /* Desktop CleanerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CFBF45822002BD600175297 /* Build configuration list for PBXNativeTarget "Desktop CleanerTests" */;
+			buildPhases = (
+				1CFBF43D22002BD600175297 /* Sources */,
+				1CFBF43E22002BD600175297 /* Frameworks */,
+				1CFBF43F22002BD600175297 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CFBF44322002BD600175297 /* PBXTargetDependency */,
+			);
+			name = "Desktop CleanerTests";
+			productName = "Desktop CleanerTests";
+			productReference = 1CFBF44122002BD600175297 /* Desktop CleanerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CFBF44B22002BD600175297 /* Desktop CleanerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CFBF45B22002BD600175297 /* Build configuration list for PBXNativeTarget "Desktop CleanerUITests" */;
+			buildPhases = (
+				1CFBF44822002BD600175297 /* Sources */,
+				1CFBF44922002BD600175297 /* Frameworks */,
+				1CFBF44A22002BD600175297 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CFBF44E22002BD600175297 /* PBXTargetDependency */,
+			);
+			name = "Desktop CleanerUITests";
+			productName = "Desktop CleanerUITests";
+			productReference = 1CFBF44C22002BD600175297 /* Desktop CleanerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CFBF42722002BD300175297 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Takuto Nakamura";
+				TargetAttributes = {
+					1CFBF42E22002BD300175297 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					1CFBF44022002BD600175297 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1CFBF42E22002BD300175297;
+					};
+					1CFBF44B22002BD600175297 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1CFBF42E22002BD300175297;
+					};
+				};
+			};
+			buildConfigurationList = 1CFBF42A22002BD300175297 /* Build configuration list for PBXProject "Desktop Cleaner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CFBF42622002BD300175297;
+			productRefGroup = 1CFBF43022002BD300175297 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CFBF42E22002BD300175297 /* Desktop Cleaner */,
+				1CFBF44022002BD600175297 /* Desktop CleanerTests */,
+				1CFBF44B22002BD600175297 /* Desktop CleanerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CFBF42D22002BD300175297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFBF43722002BD500175297 /* Assets.xcassets in Resources */,
+				1C61DDDA2205D5D1009F6F52 /* delete0.png in Resources */,
+				1C61DDDB2205D5D1009F6F52 /* delete1.png in Resources */,
+				1C61DDDD2205E852009F6F52 /* rules.json in Resources */,
+				1C61DDD92205D5D1009F6F52 /* arrow.png in Resources */,
+				1CFBF43A22002BD500175297 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFBF43F22002BD600175297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFBF44A22002BD600175297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CFBF42B22002BD300175297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFBF45F22002C2700175297 /* FileIO+.swift in Sources */,
+				1CFBF4DC2204F3BA00175297 /* CustomImageView.swift in Sources */,
+				1CFBF4DA2204E14B00175297 /* PreferencesWC.swift in Sources */,
+				1C61DDDF2205E897009F6F52 /* Rule.swift in Sources */,
+				1CFBF43322002BD300175297 /* AppDelegate.swift in Sources */,
+				1C61DDD52205C479009F6F52 /* DeleteButton.swift in Sources */,
+				1C61DDD32205C367009F6F52 /* ShortcutField.swift in Sources */,
+				1CFBF4D22204C76500175297 /* Extensions.swift in Sources */,
+				1CFBF4D82204E13300175297 /* PreferencesVC.swift in Sources */,
+				1CFBF4D42204E01B00175297 /* CleanerWC.swift in Sources */,
+				1CFBF4D62204E02E00175297 /* CleanerVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFBF43D22002BD600175297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFBF44622002BD600175297 /* Desktop_CleanerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFBF44822002BD600175297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFBF45122002BD600175297 /* Desktop_CleanerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CFBF44322002BD600175297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CFBF42E22002BD300175297 /* Desktop Cleaner */;
+			targetProxy = 1CFBF44222002BD600175297 /* PBXContainerItemProxy */;
+		};
+		1CFBF44E22002BD600175297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CFBF42E22002BD300175297 /* Desktop Cleaner */;
+			targetProxy = 1CFBF44D22002BD600175297 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CFBF43822002BD500175297 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CFBF43922002BD500175297 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CFBF45322002BD600175297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CFBF45422002BD600175297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1CFBF45622002BD600175297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJ5N2X84K8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Desktop Cleaner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-Cleaner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		1CFBF45722002BD600175297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJ5N2X84K8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Desktop Cleaner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-Cleaner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		1CFBF45922002BD600175297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJ5N2X84K8;
+				INFOPLIST_FILE = "Desktop CleanerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-CleanerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desktop Cleaner.app/Contents/MacOS/Desktop Cleaner";
+			};
+			name = Debug;
+		};
+		1CFBF45A22002BD600175297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJ5N2X84K8;
+				INFOPLIST_FILE = "Desktop CleanerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-CleanerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desktop Cleaner.app/Contents/MacOS/Desktop Cleaner";
+			};
+			name = Release;
+		};
+		1CFBF45C22002BD600175297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJ5N2X84K8;
+				INFOPLIST_FILE = "Desktop CleanerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-CleanerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "Desktop Cleaner";
+			};
+			name = Debug;
+		};
+		1CFBF45D22002BD600175297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VJ5N2X84K8;
+				INFOPLIST_FILE = "Desktop CleanerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-CleanerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "Desktop Cleaner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CFBF42A22002BD300175297 /* Build configuration list for PBXProject "Desktop Cleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFBF45322002BD600175297 /* Debug */,
+				1CFBF45422002BD600175297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CFBF45522002BD600175297 /* Build configuration list for PBXNativeTarget "Desktop Cleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFBF45622002BD600175297 /* Debug */,
+				1CFBF45722002BD600175297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CFBF45822002BD600175297 /* Build configuration list for PBXNativeTarget "Desktop CleanerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFBF45922002BD600175297 /* Debug */,
+				1CFBF45A22002BD600175297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CFBF45B22002BD600175297 /* Build configuration list for PBXNativeTarget "Desktop CleanerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFBF45C22002BD600175297 /* Debug */,
+				1CFBF45D22002BD600175297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CFBF42722002BD300175297 /* Project object */;
+}
