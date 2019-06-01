@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import HotKey
+import SpiceKey
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -17,12 +17,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private var storyboard: NSStoryboard? = nil
     private let userDefaults = UserDefaults.standard
-    private var hotkey: HotKey? = nil
     private var rules = [Rule]()
-    
-    private var cleanerWCs = [CleanerWC]()
+    private var spiceKey: SpiceKey? = nil
     private var preferencesWC: PreferencesWC?
-    private var counter: Int = 0
     
     class var shared: AppDelegate {
         return NSApplication.shared.delegate as! AppDelegate
@@ -55,6 +52,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationWillTerminate(_ aNotification: Notification) {
+        spiceKey?.unregister()
     }
     
     @objc func openPreferences() {
@@ -73,83 +71,65 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func clean() {
-        for screen in NSScreen.screens {
-            guard let cleanerWC = storyboard!.instantiateController(withIdentifier: "cleanerWC") as? CleanerWC else {
-                continue
-            }
-            cleanerWCs.append(cleanerWC)
-            cleanerWC.frame = screen.frame
-            cleanerWC.showWindow(self)
-        }
+        
     }
     
     @objc func quitApp() {
         NSApplication.shared.terminate(self)
     }
     
-    private func setHotKey() {
-        let keyStr: String? = userDefaults.object(forKey: "keyStr") as? String
-        let flagStr: String? = userDefaults.object(forKey: "flagStr") as? String
-        if (keyStr != nil && flagStr != nil), let key = Key(string: keyStr!) {
-            hotkey = nil
-            hotkey = HotKey(key: key, modifiers: decodeFlags(flagStr!))
-            hotkey?.keyDownHandler = {
-                self.clean()
-            }
-        }
+    public func setHotKey(key: Key, flags: ModifierFlags) {
+        let keyCombination = KeyCombination(key, flags)
+        spiceKey?.unregister()
+        spiceKey = SpiceKey(keyCombination, keyDownHandler: {
+            self.ordering()
+        })
+        spiceKey!.register()
+        userDefaults.set(key.keyCode,  forKey: "keyCode")
+        userDefaults.set(flags.string, forKey: "flagStr")
+        userDefaults.synchronize()
     }
     
-    public func setHotKey(keyStr: String, flagStr: String, flags: NSEvent.ModifierFlags) -> Bool {
-        if let key = Key(string: keyStr) {
-            hotkey = nil
-            hotkey = HotKey(key: key, modifiers: flags)
-            hotkey?.keyDownHandler = {
-                self.clean()
-            }
-            userDefaults.set(keyStr,  forKey: "keyStr")
-            userDefaults.set(flagStr, forKey: "flagStr")
-            userDefaults.synchronize()
-            return true
+    private func setHotKey() {
+        guard let keyCode = userDefaults.object(forKey: "keyCode") as? UInt16,
+            let flagStr = userDefaults.object(forKey: "flagStr") as? String else {
+                return
         }
-        return false
+        var flags = ModifierFlags.empty
+        switch flagStr {
+        case "⌃": flags = .ctrl
+        case "⌥": flags = .opt
+        case "⇧": flags = .sft
+        case "⌘": flags = .cmd
+        case "⌃⌥": flags = .ctrlOpt
+        case "⌃⇧": flags = .ctrlSft
+        case "⌃⌘": flags = .ctrlCmd
+        case "⌥⇧": flags = .optSft
+        case "⌥⌘": flags = .optCmd
+        case "⇧⌘": flags = .sftCmd
+        case "⌃⌥⇧": flags = .ctrlOptSft
+        case "⌃⌥⌘": flags = .ctrlOptCmd
+        case "⌃⇧⌘": flags = .ctrlSftCmd
+        case "⌥⇧⌘": flags = .optSftCmd
+        case "⌃⌥⇧⌘": flags = .ctrlOptSftCmd
+        default: return
+        }
+        self.setHotKey(key: Key(keyCode: keyCode)!, flags: flags)
     }
     
     public func removeHotKey() {
-        hotkey = nil
-        userDefaults.removeObject(forKey: "keyStr")
+        spiceKey?.unregister()
+        userDefaults.removeObject(forKey: "keyCode")
         userDefaults.removeObject(forKey: "flagStr")
         userDefaults.synchronize()
     }
     
-    private func decodeFlags(_ flagStr: String) -> NSEvent.ModifierFlags {
-        switch flagStr {
-        case "⇧":   return .shift
-        case "⌃":   return .control
-        case "⌥":   return .option
-        case "⌘":   return .command
-        case "⇧⌃":  return [.shift,   .control]
-        case "⇧⌥":  return [.shift,   .option]
-        case "⇧⌘":  return [.shift,   .command]
-        case "⌃⌥":  return [.control, .option]
-        case "⌃⌘":  return [.control, .command]
-        case "⌥⌘":  return [.option,  .command]
-        case "⇧⌃⌥": return [.shift,   .control, .option]
-        case "⇧⌃⌘": return [.shift,   .control, .command]
-        case "⇧⌥⌘": return [.shift,   .option,  .command]
-        case "⌃⌥⌘": return [.control, .option,  .command]
-        case "⇧⌃⌥⌘": return [.shift,  .control, .option, .command]
-        default: return []
-        }
-    }
-    
     public func referHotKey() -> (keyStr: String, flagStr: String)? {
-        let keyStr: String? = userDefaults.object(forKey: "keyStr") as? String
-        let flagStr: String? = userDefaults.object(forKey: "flagStr") as? String
-        if keyStr != nil && flagStr != nil {
-            return (keyStr!, flagStr!)
-        } else {
-            return nil
+        guard let keyCode = userDefaults.object(forKey: "keyCode") as? UInt16,
+            let flagStr = userDefaults.object(forKey: "flagStr") as? String else {
+                return nil
         }
+        return (Key(keyCode: keyCode)!.string, flagStr)
     }
     
     public func referRules() -> [Rule] {
@@ -160,16 +140,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.rules = rules
         FileIO.saveRules(rules: rules)
     }
+
     
-    public func tellGoUpped() {
-        counter += 1
-        if counter == cleanerWCs.count {
-            counter = 0
-            ordering()
-        }
-    }
-    
-    private func ordering() {
+    @objc func ordering() {
         rules.forEach { (rule) in
             if rule.isExtension {
                 if rule.isMove {
@@ -184,12 +157,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     FileIO.removeFile(isDirectory: rule.isDirectory, name: rule.name, condition: rule.condition)
                 }
             }
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.cleanerWCs.forEach { (cleanerWC) in
-                cleanerWC.tellGoDown()
-            }
-            self.cleanerWCs.removeAll()
         }
     }
     

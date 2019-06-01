@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -619,7 +619,7 @@
                                         <menuItem title="Show Sidebar" keyEquivalent="s" id="kIP-vf-haE">
                                             <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
                                             <connections>
-                                                <action selector="toggleSourceList:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
+                                                <action selector="toggleSidebar:" target="Ady-hI-5gd" id="iwa-gc-5KM"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Enter Full Screen" keyEquivalent="f" id="4J7-dP-txa">
@@ -695,26 +695,7 @@
                 </menu>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
-        </scene>
-        <!--Window Controller-->
-        <scene sceneID="R2V-B0-nI4">
-            <objects>
-                <windowController storyboardIdentifier="cleanerWC" id="B8D-0N-5wS" customClass="CleanerWC" customModule="Desktop_Cleaner" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Desktop Cleaner" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <connections>
-                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
-                    </connections>
-                </windowController>
-                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="632" y="-10"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="Edc-Wf-fdv">
@@ -842,7 +823,7 @@
                                     </gridCell>
                                     <gridCell row="7hn-Dl-XJZ" column="EK2-N0-NNJ" id="rPH-Au-7V6">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JN1-6l-Z9S">
-                                            <rect key="frame" x="332" y="32" width="41" height="13"/>
+                                            <rect key="frame" x="332" y="30" width="41" height="17"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="ならば" id="iMi-Bo-Zzf">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -895,7 +876,7 @@
                                     </gridCell>
                                     <gridCell row="VZ3-DJ-2oj" column="4i0-wh-JYy" id="SWm-1c-mJs">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FO5-tm-8MF">
-                                            <rect key="frame" x="0.0" y="4" width="105" height="13"/>
+                                            <rect key="frame" x="0.0" y="2" width="105" height="17"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="ファイル拡張子が" id="XH4-As-jfL">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -933,7 +914,7 @@
                                     </gridCell>
                                     <gridCell row="VZ3-DJ-2oj" column="EK2-N0-NNJ" id="tzu-Bl-ANh">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BeT-S8-1yF">
-                                            <rect key="frame" x="332" y="4" width="41" height="13"/>
+                                            <rect key="frame" x="332" y="2" width="41" height="17"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="ならば" id="P8Y-CA-USY">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1121,34 +1102,6 @@
                 <customObject id="10T-eg-MZA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="740" y="706.5"/>
-        </scene>
-        <!--CleanerVC-->
-        <scene sceneID="hIz-AP-VOD">
-            <objects>
-                <viewController id="XfG-lQ-9wD" customClass="CleanerVC" customModule="Desktop_Cleaner" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ttb-Kj-cBF" customClass="CustomImageView" customModule="Desktop_Cleaner" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="4Yf-Rd-zfI"/>
-                            </imageView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="Ttb-Kj-cBF" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="P1a-wy-ode"/>
-                            <constraint firstItem="Ttb-Kj-cBF" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="RtI-Iz-Ddu"/>
-                            <constraint firstAttribute="trailing" secondItem="Ttb-Kj-cBF" secondAttribute="trailing" id="adG-w1-O5W"/>
-                            <constraint firstAttribute="bottom" secondItem="Ttb-Kj-cBF" secondAttribute="bottom" id="rY4-61-9jg"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imageView" destination="Ttb-Kj-cBF" id="39F-nO-tyj"/>
-                    </connections>
-                </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
     <resources>

@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C61DDCE2205C073009F6F52 /* HotKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C61DDCD2205C073009F6F52 /* HotKey.framework */; };
-		1C61DDCF2205C073009F6F52 /* HotKey.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C61DDCD2205C073009F6F52 /* HotKey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C61DDD32205C367009F6F52 /* ShortcutField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61DDD22205C367009F6F52 /* ShortcutField.swift */; };
 		1C61DDD52205C479009F6F52 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61DDD42205C479009F6F52 /* DeleteButton.swift */; };
 		1C61DDD92205D5D1009F6F52 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C61DDD62205C76F009F6F52 /* arrow.png */; };
@@ -23,11 +21,11 @@
 		1CFBF45122002BD600175297 /* Desktop_CleanerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF45022002BD600175297 /* Desktop_CleanerUITests.swift */; };
 		1CFBF45F22002C2700175297 /* FileIO+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF45E22002C2700175297 /* FileIO+.swift */; };
 		1CFBF4D22204C76500175297 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4D12204C76500175297 /* Extensions.swift */; };
-		1CFBF4D42204E01B00175297 /* CleanerWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4D32204E01B00175297 /* CleanerWC.swift */; };
-		1CFBF4D62204E02E00175297 /* CleanerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4D52204E02E00175297 /* CleanerVC.swift */; };
 		1CFBF4D82204E13300175297 /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4D72204E13300175297 /* PreferencesVC.swift */; };
 		1CFBF4DA2204E14B00175297 /* PreferencesWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4D92204E14B00175297 /* PreferencesWC.swift */; };
-		1CFBF4DC2204F3BA00175297 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF4DB2204F3BA00175297 /* CustomImageView.swift */; };
+		51AEEE78B0414CDF15EA79DF /* Pods_Desktop_CleanerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E4236697F830AA4FD91BA4 /* Pods_Desktop_CleanerTests.framework */; };
+		B079808D1770B86B13ED87FD /* Pods_Desktop_CleanerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E5972A468BA91F03A604E3 /* Pods_Desktop_CleanerUITests.framework */; };
+		D31D87936DCCAB7885599BDF /* Pods_Desktop_Cleaner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C27499638B4EAE02043CAC5 /* Pods_Desktop_Cleaner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,22 +45,8 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		1C61DDD02205C073009F6F52 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1C61DDCF2205C073009F6F52 /* HotKey.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1C61DDCD2205C073009F6F52 /* HotKey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HotKey.framework; sourceTree = "<group>"; };
+		0C27499638B4EAE02043CAC5 /* Pods_Desktop_Cleaner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desktop_Cleaner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C61DDD22205C367009F6F52 /* ShortcutField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutField.swift; sourceTree = "<group>"; };
 		1C61DDD42205C479009F6F52 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		1C61DDD62205C76F009F6F52 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
@@ -84,11 +68,16 @@
 		1CFBF45E22002C2700175297 /* FileIO+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileIO+.swift"; sourceTree = "<group>"; };
 		1CFBF46022004C4D00175297 /* Desktop Cleaner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Desktop Cleaner.entitlements"; sourceTree = "<group>"; };
 		1CFBF4D12204C76500175297 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		1CFBF4D32204E01B00175297 /* CleanerWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerWC.swift; sourceTree = "<group>"; };
-		1CFBF4D52204E02E00175297 /* CleanerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanerVC.swift; sourceTree = "<group>"; };
 		1CFBF4D72204E13300175297 /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
 		1CFBF4D92204E14B00175297 /* PreferencesWC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWC.swift; sourceTree = "<group>"; };
-		1CFBF4DB2204F3BA00175297 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		2BAF23B634BB30CF4A1836C3 /* Pods-Desktop CleanerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desktop CleanerUITests.release.xcconfig"; path = "Target Support Files/Pods-Desktop CleanerUITests/Pods-Desktop CleanerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F6C797DBF096572D7316DEB /* Pods-Desktop CleanerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desktop CleanerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Desktop CleanerUITests/Pods-Desktop CleanerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F28EB5201B93A1D69BC9EEC /* Pods-Desktop Cleaner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desktop Cleaner.debug.xcconfig"; path = "Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner.debug.xcconfig"; sourceTree = "<group>"; };
+		84454CD91FC58370FD489ED9 /* Pods-Desktop Cleaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desktop Cleaner.release.xcconfig"; path = "Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner.release.xcconfig"; sourceTree = "<group>"; };
+		A2549B05DC789B31A5491BB9 /* Pods-Desktop CleanerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desktop CleanerTests.release.xcconfig"; path = "Target Support Files/Pods-Desktop CleanerTests/Pods-Desktop CleanerTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2E5972A468BA91F03A604E3 /* Pods_Desktop_CleanerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desktop_CleanerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F70E36B69BB1082D60E371 /* Pods-Desktop CleanerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desktop CleanerTests.debug.xcconfig"; path = "Target Support Files/Pods-Desktop CleanerTests/Pods-Desktop CleanerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5E4236697F830AA4FD91BA4 /* Pods_Desktop_CleanerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desktop_CleanerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C61DDCE2205C073009F6F52 /* HotKey.framework in Frameworks */,
+				D31D87936DCCAB7885599BDF /* Pods_Desktop_Cleaner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51AEEE78B0414CDF15EA79DF /* Pods_Desktop_CleanerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B079808D1770B86B13ED87FD /* Pods_Desktop_CleanerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +111,9 @@
 		1C61DDD12205C078009F6F52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1C61DDCD2205C073009F6F52 /* HotKey.framework */,
+				0C27499638B4EAE02043CAC5 /* Pods_Desktop_Cleaner.framework */,
+				E5E4236697F830AA4FD91BA4 /* Pods_Desktop_CleanerTests.framework */,
+				A2E5972A468BA91F03A604E3 /* Pods_Desktop_CleanerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,9 +121,6 @@
 		1C61DDE222063CC9009F6F52 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				1CFBF4D32204E01B00175297 /* CleanerWC.swift */,
-				1CFBF4D52204E02E00175297 /* CleanerVC.swift */,
-				1CFBF4DB2204F3BA00175297 /* CustomImageView.swift */,
 				1CFBF4D92204E14B00175297 /* PreferencesWC.swift */,
 				1CFBF4D72204E13300175297 /* PreferencesVC.swift */,
 				1C61DDD22205C367009F6F52 /* ShortcutField.swift */,
@@ -147,6 +137,7 @@
 				1CFBF44F22002BD600175297 /* Desktop CleanerUITests */,
 				1CFBF43022002BD300175297 /* Products */,
 				1C61DDD12205C078009F6F52 /* Frameworks */,
+				8B9E2BA3E2CEBB6C443B4BBF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +189,19 @@
 			path = "Desktop CleanerUITests";
 			sourceTree = "<group>";
 		};
+		8B9E2BA3E2CEBB6C443B4BBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F28EB5201B93A1D69BC9EEC /* Pods-Desktop Cleaner.debug.xcconfig */,
+				84454CD91FC58370FD489ED9 /* Pods-Desktop Cleaner.release.xcconfig */,
+				A9F70E36B69BB1082D60E371 /* Pods-Desktop CleanerTests.debug.xcconfig */,
+				A2549B05DC789B31A5491BB9 /* Pods-Desktop CleanerTests.release.xcconfig */,
+				6F6C797DBF096572D7316DEB /* Pods-Desktop CleanerUITests.debug.xcconfig */,
+				2BAF23B634BB30CF4A1836C3 /* Pods-Desktop CleanerUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,10 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CFBF45522002BD600175297 /* Build configuration list for PBXNativeTarget "Desktop Cleaner" */;
 			buildPhases = (
+				B91961C2D5FBED4BF154C982 /* [CP] Check Pods Manifest.lock */,
 				1CFBF42B22002BD300175297 /* Sources */,
 				1CFBF42C22002BD300175297 /* Frameworks */,
 				1CFBF42D22002BD300175297 /* Resources */,
-				1C61DDD02205C073009F6F52 /* Embed Frameworks */,
+				48809A407C75BCD293DCEC09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,6 +228,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CFBF45822002BD600175297 /* Build configuration list for PBXNativeTarget "Desktop CleanerTests" */;
 			buildPhases = (
+				EFDD8519444D37C88E63C3AD /* [CP] Check Pods Manifest.lock */,
 				1CFBF43D22002BD600175297 /* Sources */,
 				1CFBF43E22002BD600175297 /* Frameworks */,
 				1CFBF43F22002BD600175297 /* Resources */,
@@ -241,6 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CFBF45B22002BD600175297 /* Build configuration list for PBXNativeTarget "Desktop CleanerUITests" */;
 			buildPhases = (
+				21AD5F8916AF587019FDE4E7 /* [CP] Check Pods Manifest.lock */,
 				1CFBF44822002BD600175297 /* Sources */,
 				1CFBF44922002BD600175297 /* Frameworks */,
 				1CFBF44A22002BD600175297 /* Resources */,
@@ -267,6 +274,7 @@
 				TargetAttributes = {
 					1CFBF42E22002BD300175297 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
@@ -275,16 +283,18 @@
 					};
 					1CFBF44022002BD600175297 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 1CFBF42E22002BD300175297;
 					};
 					1CFBF44B22002BD600175297 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 1CFBF42E22002BD300175297;
 					};
 				};
 			};
 			buildConfigurationList = 1CFBF42A22002BD300175297 /* Build configuration list for PBXProject "Desktop Cleaner" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -333,13 +343,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21AD5F8916AF587019FDE4E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Desktop CleanerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48809A407C75BCD293DCEC09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SpiceKey/SpiceKey.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpiceKey.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B91961C2D5FBED4BF154C982 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Desktop Cleaner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFDD8519444D37C88E63C3AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Desktop CleanerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1CFBF42B22002BD300175297 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1CFBF45F22002C2700175297 /* FileIO+.swift in Sources */,
-				1CFBF4DC2204F3BA00175297 /* CustomImageView.swift in Sources */,
 				1CFBF4DA2204E14B00175297 /* PreferencesWC.swift in Sources */,
 				1C61DDDF2205E897009F6F52 /* Rule.swift in Sources */,
 				1CFBF43322002BD300175297 /* AppDelegate.swift in Sources */,
@@ -347,8 +447,6 @@
 				1C61DDD32205C367009F6F52 /* ShortcutField.swift in Sources */,
 				1CFBF4D22204C76500175297 /* Extensions.swift in Sources */,
 				1CFBF4D82204E13300175297 /* PreferencesVC.swift in Sources */,
-				1CFBF4D42204E01B00175297 /* CleanerWC.swift in Sources */,
-				1CFBF4D62204E02E00175297 /* CleanerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +610,7 @@
 		};
 		1CFBF45622002BD600175297 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F28EB5201B93A1D69BC9EEC /* Pods-Desktop Cleaner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,12 +627,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-Cleaner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		1CFBF45722002BD600175297 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84454CD91FC58370FD489ED9 /* Pods-Desktop Cleaner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,12 +650,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-Cleaner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		1CFBF45922002BD600175297 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F70E36B69BB1082D60E371 /* Pods-Desktop CleanerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -570,13 +671,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-CleanerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desktop Cleaner.app/Contents/MacOS/Desktop Cleaner";
 			};
 			name = Debug;
 		};
 		1CFBF45A22002BD600175297 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2549B05DC789B31A5491BB9 /* Pods-Desktop CleanerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -591,13 +693,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-CleanerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desktop Cleaner.app/Contents/MacOS/Desktop Cleaner";
 			};
 			name = Release;
 		};
 		1CFBF45C22002BD600175297 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F6C797DBF096572D7316DEB /* Pods-Desktop CleanerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -611,13 +714,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-CleanerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "Desktop Cleaner";
 			};
 			name = Debug;
 		};
 		1CFBF45D22002BD600175297 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BAF23B634BB30CF4A1836C3 /* Pods-Desktop CleanerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -631,7 +735,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyome.Desktop-CleanerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "Desktop Cleaner";
 			};
 			name = Release;

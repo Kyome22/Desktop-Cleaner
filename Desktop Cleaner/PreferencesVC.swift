@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SpiceKey
 
 class PreferencesVC: NSViewController, ShortcutFieldDelegate, NSTextFieldDelegate {
 
@@ -72,56 +73,27 @@ class PreferencesVC: NSViewController, ShortcutFieldDelegate, NSTextFieldDelegat
     
     func didPressKey(event: NSEvent) {
         let flags = event.modifierFlags.intersection(NSEvent.ModifierFlags.deviceIndependentFlagsMask)
-        let flagStr = encodeFlags(flags)
-        if flagStr == "" {
+        guard let modifierFlags = ModifierFlags(flags: flags), !modifierFlags.string.isEmpty else {
             shortcutField.stringValue = ""
             deleteBtn.setArrow()
             return
         }
-        if shortcutField.stringValue.replacingOccurrences(of: flagStr, with: "").count == 0 {
-            let keyStr = event.charactersIgnoringModifiers!.uppercased()
-            if AppDelegate.shared.setHotKey(keyStr: keyStr, flagStr: flagStr, flags: flags) {
-                shortcutField.stringValue = flagStr + keyStr
-                shortcutField.abortEditing()
-                shortcutField.isEditable = false
-                deleteBtn.setDelete()
-            } else {
-                shortcutField.stringValue = ""
-                deleteBtn.setArrow()
-            }
+        if let key = Key(keyCode: event.keyCode), shortcutField.stringValue.replacingOccurrences(of: modifierFlags.string, with: "").isEmpty {
+            AppDelegate.shared.setHotKey(key: key, flags: modifierFlags)
+            shortcutField.stringValue = modifierFlags.string + key.string
+            shortcutField.abortEditing()
+            shortcutField.isEditable = false
+            deleteBtn.setDelete()
         }
     }
     
     func didChangeFlag(event: NSEvent) {
         if AppDelegate.shared.referHotKey() == nil {
             let flags = event.modifierFlags.intersection(NSEvent.ModifierFlags.deviceIndependentFlagsMask)
-            let flagStr = encodeFlags(flags)
-            shortcutField.stringValue = flagStr
+            guard let modifierFlags = ModifierFlags(flags: flags) else { return }
+            shortcutField.stringValue = modifierFlags.string
             shortcutField.currentEditor()?.selectedRange = NSMakeRange(shortcutField.stringValue.count, 0)
         }
-    }
-    
-    func encodeFlags(_ flags: NSEvent.ModifierFlags) -> String {
-        var str: String = ""
-        switch flags {
-        case [.shift]: str = "⇧"
-        case [.control]: str = "⌃"
-        case [.option]: str = "⌥"
-        case [.command]: str = "⌘"
-        case [.shift,   .control]: str = "⇧⌃"
-        case [.shift,   .option]: str = "⇧⌥"
-        case [.shift,   .command]: str = "⇧⌘"
-        case [.control, .option]: str = "⌃⌥"
-        case [.control, .command]: str = "⌃⌘"
-        case [.option,  .command]: str = "⌥⌘"
-        case [.shift,   .control, .option]: str = "⇧⌃⌥"
-        case [.shift,   .control, .command]: str = "⇧⌃⌘"
-        case [.shift,   .option,  .command]: str = "⇧⌥⌘"
-        case [.control, .option,  .command]: str = "⌃⌥⌘"
-        case [.shift,   .control, .option, .command]: str = "⇧⌃⌥⌘"
-        default: break
-        }
-        return str
     }
     
     func controlTextDidChange(_ obj: Notification) {

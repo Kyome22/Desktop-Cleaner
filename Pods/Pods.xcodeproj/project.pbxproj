@@ -1,0 +1,1005 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F9B92E39A2BD4637FCAB9A89DA64E8F /* KeyCombination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAA88F7128854938EC7F598676FCCE2 /* KeyCombination.swift */; };
+		293FAB539DBD21245701E20705231DAA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A90AD4632E081519480CF6A6BA336BE /* Cocoa.framework */; };
+		38586BB323796D1AAFFE40AC8CBE42C0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A90AD4632E081519480CF6A6BA336BE /* Cocoa.framework */; };
+		3937A203493B6E69C0EAA6C5AE567509 /* Pods-Desktop CleanerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4C7C8B39FF8850DC2A1249FDAFE6C9 /* Pods-Desktop CleanerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3994748FE7E4FC44B45612A48F707F7C /* Pods-Desktop CleanerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C3EB7445396CFAFF79ACA0D2FDAD87 /* Pods-Desktop CleanerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CDD9E92E26DA65710E77B1BC7DC4530 /* Pods-Desktop Cleaner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEEE13436F410A220CDC202345D06BB0 /* Pods-Desktop Cleaner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E4057FF3A025EAC7B8D65B6E1213E2F /* SpiceKey-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E52CE5B84813BFBFD78BB02D702043DF /* SpiceKey-dummy.m */; };
+		60D509DDB79A60FCF7770806DD095E80 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E065A8013B9DC48D7F576F12A1794A69 /* Key.swift */; };
+		70A6333E0AE5E5F17377D5581002B143 /* Pods-Desktop Cleaner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 940C9B3E5E0F49E2B8D3EB62EACDB59E /* Pods-Desktop Cleaner-dummy.m */; };
+		78B73EF86AA367BE49912CA1CEC74166 /* Pods-Desktop CleanerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C229358CEC8E16A22328E991FB229794 /* Pods-Desktop CleanerTests-dummy.m */; };
+		7F63C0535F3A3C518E780242F573A637 /* SpiceKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFB4C1C217ECA65DA74305D058F4852 /* SpiceKeyManager.swift */; };
+		97EA24995D3459B33D3E99CE82AB6F1E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A90AD4632E081519480CF6A6BA336BE /* Cocoa.framework */; };
+		99C4AF901C01254AE73A459396504D09 /* Appkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E108CEE5A50BA86470C875BF5A0BB2 /* Appkit.framework */; };
+		A17848D302206083074F8E98FF8E77E5 /* Pods-Desktop CleanerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA41450D2369D64794E8EE8A6D0543F /* Pods-Desktop CleanerUITests-dummy.m */; };
+		B28F90E51DCE316742158E7B1D63A030 /* SpiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF023F08D91BF826AC070B46F2027DCB /* SpiceKey.swift */; };
+		B96EF57AE30717851481C144931CA20E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A90AD4632E081519480CF6A6BA336BE /* Cocoa.framework */; };
+		BE1EEE1B6E2C88FB3827D678DEE21BCF /* SpiceKey-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F54233B895C75FC39F68815B02789A37 /* SpiceKey-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1D3BC01390B4F152FAB7EED9698DC6C /* ModifierFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3D56A2E848B84E770CCF3E9FDDB900 /* ModifierFlags.swift */; };
+		D68FDFACC1E381B55A9EBDCA5B4BFB69 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40D1FE882D10B93505104FEDCD01CD38 /* Carbon.framework */; };
+		E7E38BE1028B3B2FBEEF6BBF4DF4F051 /* ModifierFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC641266BDA546E8A382AAB35542144 /* ModifierFlag.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B82319B4E71F0856DFEC1E843773254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 992B21B0EA54CAA54AB830D78CC14AA7;
+			remoteInfo = SpiceKey;
+		};
+		7111100F9F45AD004F16C6A7E661E7CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB81AC59C0AB83BD27FBA48B8572FAF1;
+			remoteInfo = "Pods-Desktop Cleaner";
+		};
+		CB06BC81585F45CF6BA34BC4F103B157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB81AC59C0AB83BD27FBA48B8572FAF1;
+			remoteInfo = "Pods-Desktop Cleaner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06D0292026996C44DBC4DA774AE73F58 /* Pods_Desktop_Cleaner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Desktop_Cleaner.framework; path = "Pods-Desktop Cleaner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14255EC561E83B11CE52914F4B21C2FE /* Pods-Desktop CleanerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desktop CleanerUITests.modulemap"; sourceTree = "<group>"; };
+		1D4C7C8B39FF8850DC2A1249FDAFE6C9 /* Pods-Desktop CleanerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desktop CleanerTests-umbrella.h"; sourceTree = "<group>"; };
+		1EDF6B873141615FD7148ABA75C2EEA3 /* Pods-Desktop Cleaner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desktop Cleaner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1F2F53A84D3E3AD6266FB083A0C737FE /* Pods-Desktop Cleaner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desktop Cleaner.modulemap"; sourceTree = "<group>"; };
+		347E0F750DAD5F359F63DA00C1A8EB11 /* SpiceKey-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SpiceKey-Info.plist"; sourceTree = "<group>"; };
+		365B871B0E1B8E92A6B99B15A83C5080 /* Pods-Desktop CleanerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desktop CleanerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		37A33C4C2746E3BCEAA938FF0A76B7E9 /* Pods-Desktop Cleaner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Desktop Cleaner-frameworks.sh"; sourceTree = "<group>"; };
+		40D1FE882D10B93505104FEDCD01CD38 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
+		473CF033FCB0487ED0718F2972E3C279 /* Pods-Desktop CleanerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desktop CleanerTests.release.xcconfig"; sourceTree = "<group>"; };
+		52DB114207ABADD7D7AE2F73DE0D345E /* Pods_Desktop_CleanerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Desktop_CleanerUITests.framework; path = "Pods-Desktop CleanerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C6409B91700191A24E71B2422672F5 /* Pods-Desktop CleanerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desktop CleanerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		64DF8B358AEB07557C4D0DA7CF84C905 /* Pods-Desktop CleanerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desktop CleanerTests-Info.plist"; sourceTree = "<group>"; };
+		6A90AD4632E081519480CF6A6BA336BE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		6DAA88F7128854938EC7F598676FCCE2 /* KeyCombination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyCombination.swift; path = SpiceKey/KeyCombination.swift; sourceTree = "<group>"; };
+		6E1FA61AF583F8B248EB1F5E802EE208 /* Pods-Desktop CleanerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desktop CleanerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		741FD0909B6E27722337AF0648131172 /* SpiceKey.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SpiceKey.modulemap; sourceTree = "<group>"; };
+		7A8DDAF494546BF5AE161364FBAC76A9 /* Pods-Desktop CleanerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Desktop CleanerTests.modulemap"; sourceTree = "<group>"; };
+		7FA41450D2369D64794E8EE8A6D0543F /* Pods-Desktop CleanerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desktop CleanerUITests-dummy.m"; sourceTree = "<group>"; };
+		8AE26E47C400416450F362CF8F5B5B4F /* Pods_Desktop_CleanerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Desktop_CleanerTests.framework; path = "Pods-Desktop CleanerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7AA2C8546233D7E0A80192269706C5 /* SpiceKey-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpiceKey-prefix.pch"; sourceTree = "<group>"; };
+		925794DACCCC6C518A5365C50E9942D2 /* Pods-Desktop Cleaner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desktop Cleaner-Info.plist"; sourceTree = "<group>"; };
+		940C9B3E5E0F49E2B8D3EB62EACDB59E /* Pods-Desktop Cleaner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desktop Cleaner-dummy.m"; sourceTree = "<group>"; };
+		9714B7E279A6E4EC559F1A0C8EB53828 /* Pods-Desktop Cleaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desktop Cleaner.release.xcconfig"; sourceTree = "<group>"; };
+		98E108CEE5A50BA86470C875BF5A0BB2 /* Appkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appkit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Appkit.framework; sourceTree = DEVELOPER_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEEE13436F410A220CDC202345D06BB0 /* Pods-Desktop Cleaner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desktop Cleaner-umbrella.h"; sourceTree = "<group>"; };
+		B73F2F3DEFD485EEFA4B6051C141D8F7 /* Pods-Desktop CleanerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desktop CleanerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B80F607D6956F249921BF7C64060DD8F /* SpiceKey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SpiceKey.framework; path = SpiceKey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC75581A48C508EB4528173AD3AAEE9C /* Pods-Desktop CleanerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Desktop CleanerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BDC641266BDA546E8A382AAB35542144 /* ModifierFlag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModifierFlag.swift; path = SpiceKey/ModifierFlag.swift; sourceTree = "<group>"; };
+		BE3D56A2E848B84E770CCF3E9FDDB900 /* ModifierFlags.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModifierFlags.swift; path = SpiceKey/ModifierFlags.swift; sourceTree = "<group>"; };
+		C229358CEC8E16A22328E991FB229794 /* Pods-Desktop CleanerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Desktop CleanerTests-dummy.m"; sourceTree = "<group>"; };
+		C5C3EB7445396CFAFF79ACA0D2FDAD87 /* Pods-Desktop CleanerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Desktop CleanerUITests-umbrella.h"; sourceTree = "<group>"; };
+		CFFB4C1C217ECA65DA74305D058F4852 /* SpiceKeyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpiceKeyManager.swift; path = SpiceKey/SpiceKeyManager.swift; sourceTree = "<group>"; };
+		D7E8E407C5DEF3C931FCCEBF9750A2AC /* SpiceKey.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SpiceKey.xcconfig; sourceTree = "<group>"; };
+		DF023F08D91BF826AC070B46F2027DCB /* SpiceKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpiceKey.swift; path = SpiceKey/SpiceKey.swift; sourceTree = "<group>"; };
+		E065A8013B9DC48D7F576F12A1794A69 /* Key.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Key.swift; path = SpiceKey/Key.swift; sourceTree = "<group>"; };
+		E52CE5B84813BFBFD78BB02D702043DF /* SpiceKey-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SpiceKey-dummy.m"; sourceTree = "<group>"; };
+		EC421488297AE48D5E30FB32DA194C0B /* Pods-Desktop Cleaner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desktop Cleaner.debug.xcconfig"; sourceTree = "<group>"; };
+		F54233B895C75FC39F68815B02789A37 /* SpiceKey-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SpiceKey-umbrella.h"; sourceTree = "<group>"; };
+		F68A3A092C02C5F17D072FD606C1D6FF /* Pods-Desktop Cleaner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desktop Cleaner-acknowledgements.plist"; sourceTree = "<group>"; };
+		F737AEB0B4FDA63FEA30FA90886A48D4 /* Pods-Desktop CleanerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Desktop CleanerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F92E73CF6F3A6362343ECF2F4C2B8F0D /* Pods-Desktop CleanerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desktop CleanerUITests-Info.plist"; sourceTree = "<group>"; };
+		F946060B818376ECB2BE1A89030D5F97 /* Pods-Desktop CleanerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Desktop CleanerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36332853079152DBA56ECD71BFC5789D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EA24995D3459B33D3E99CE82AB6F1E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E550715E0630D77B8FBF5EA47897A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293FAB539DBD21245701E20705231DAA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A93AAF9D4F9FD9CBEBF1F821E41037E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B96EF57AE30717851481C144931CA20E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A655BC0F386B0C91E4B7F5BC927234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C4AF901C01254AE73A459396504D09 /* Appkit.framework in Frameworks */,
+				D68FDFACC1E381B55A9EBDCA5B4BFB69 /* Carbon.framework in Frameworks */,
+				38586BB323796D1AAFFE40AC8CBE42C0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AAA0BD63A35F74D72AB89604D084926 /* Pods-Desktop CleanerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A8DDAF494546BF5AE161364FBAC76A9 /* Pods-Desktop CleanerTests.modulemap */,
+				B73F2F3DEFD485EEFA4B6051C141D8F7 /* Pods-Desktop CleanerTests-acknowledgements.markdown */,
+				365B871B0E1B8E92A6B99B15A83C5080 /* Pods-Desktop CleanerTests-acknowledgements.plist */,
+				C229358CEC8E16A22328E991FB229794 /* Pods-Desktop CleanerTests-dummy.m */,
+				64DF8B358AEB07557C4D0DA7CF84C905 /* Pods-Desktop CleanerTests-Info.plist */,
+				1D4C7C8B39FF8850DC2A1249FDAFE6C9 /* Pods-Desktop CleanerTests-umbrella.h */,
+				F737AEB0B4FDA63FEA30FA90886A48D4 /* Pods-Desktop CleanerTests.debug.xcconfig */,
+				473CF033FCB0487ED0718F2972E3C279 /* Pods-Desktop CleanerTests.release.xcconfig */,
+			);
+			name = "Pods-Desktop CleanerTests";
+			path = "Target Support Files/Pods-Desktop CleanerTests";
+			sourceTree = "<group>";
+		};
+		169AD986A5FBED2BE57350A0CA9480B6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB284BCC7D360256AB219F44BAE90200 /* Pods-Desktop Cleaner */,
+				0AAA0BD63A35F74D72AB89604D084926 /* Pods-Desktop CleanerTests */,
+				F091760E599E8F39AF99374084D03446 /* Pods-Desktop CleanerUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		18DEDFBE2CB0509419CA228615D06981 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06D0292026996C44DBC4DA774AE73F58 /* Pods_Desktop_Cleaner.framework */,
+				8AE26E47C400416450F362CF8F5B5B4F /* Pods_Desktop_CleanerTests.framework */,
+				52DB114207ABADD7D7AE2F73DE0D345E /* Pods_Desktop_CleanerUITests.framework */,
+				B80F607D6956F249921BF7C64060DD8F /* SpiceKey.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AF6202AD1516EB28F4C55CA79ECE6EB /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				98E108CEE5A50BA86470C875BF5A0BB2 /* Appkit.framework */,
+				40D1FE882D10B93505104FEDCD01CD38 /* Carbon.framework */,
+				6A90AD4632E081519480CF6A6BA336BE /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		3F44D05546D90CC0CE4893AAEBB68667 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				741FD0909B6E27722337AF0648131172 /* SpiceKey.modulemap */,
+				D7E8E407C5DEF3C931FCCEBF9750A2AC /* SpiceKey.xcconfig */,
+				E52CE5B84813BFBFD78BB02D702043DF /* SpiceKey-dummy.m */,
+				347E0F750DAD5F359F63DA00C1A8EB11 /* SpiceKey-Info.plist */,
+				8B7AA2C8546233D7E0A80192269706C5 /* SpiceKey-prefix.pch */,
+				F54233B895C75FC39F68815B02789A37 /* SpiceKey-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SpiceKey";
+			sourceTree = "<group>";
+		};
+		8FC9571A419954096E45C9813CA876AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A14D56B25A46179FB4F918F122710BB2 /* SpiceKey */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A14D56B25A46179FB4F918F122710BB2 /* SpiceKey */ = {
+			isa = PBXGroup;
+			children = (
+				E065A8013B9DC48D7F576F12A1794A69 /* Key.swift */,
+				6DAA88F7128854938EC7F598676FCCE2 /* KeyCombination.swift */,
+				BDC641266BDA546E8A382AAB35542144 /* ModifierFlag.swift */,
+				BE3D56A2E848B84E770CCF3E9FDDB900 /* ModifierFlags.swift */,
+				DF023F08D91BF826AC070B46F2027DCB /* SpiceKey.swift */,
+				CFFB4C1C217ECA65DA74305D058F4852 /* SpiceKeyManager.swift */,
+				3F44D05546D90CC0CE4893AAEBB68667 /* Support Files */,
+			);
+			name = SpiceKey;
+			path = SpiceKey;
+			sourceTree = "<group>";
+		};
+		A3CDB250FFEFB42CA2C68F1FBD92997D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AF6202AD1516EB28F4C55CA79ECE6EB /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB284BCC7D360256AB219F44BAE90200 /* Pods-Desktop Cleaner */ = {
+			isa = PBXGroup;
+			children = (
+				1F2F53A84D3E3AD6266FB083A0C737FE /* Pods-Desktop Cleaner.modulemap */,
+				1EDF6B873141615FD7148ABA75C2EEA3 /* Pods-Desktop Cleaner-acknowledgements.markdown */,
+				F68A3A092C02C5F17D072FD606C1D6FF /* Pods-Desktop Cleaner-acknowledgements.plist */,
+				940C9B3E5E0F49E2B8D3EB62EACDB59E /* Pods-Desktop Cleaner-dummy.m */,
+				37A33C4C2746E3BCEAA938FF0A76B7E9 /* Pods-Desktop Cleaner-frameworks.sh */,
+				925794DACCCC6C518A5365C50E9942D2 /* Pods-Desktop Cleaner-Info.plist */,
+				AEEE13436F410A220CDC202345D06BB0 /* Pods-Desktop Cleaner-umbrella.h */,
+				EC421488297AE48D5E30FB32DA194C0B /* Pods-Desktop Cleaner.debug.xcconfig */,
+				9714B7E279A6E4EC559F1A0C8EB53828 /* Pods-Desktop Cleaner.release.xcconfig */,
+			);
+			name = "Pods-Desktop Cleaner";
+			path = "Target Support Files/Pods-Desktop Cleaner";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A3CDB250FFEFB42CA2C68F1FBD92997D /* Frameworks */,
+				8FC9571A419954096E45C9813CA876AF /* Pods */,
+				18DEDFBE2CB0509419CA228615D06981 /* Products */,
+				169AD986A5FBED2BE57350A0CA9480B6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F091760E599E8F39AF99374084D03446 /* Pods-Desktop CleanerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14255EC561E83B11CE52914F4B21C2FE /* Pods-Desktop CleanerUITests.modulemap */,
+				BC75581A48C508EB4528173AD3AAEE9C /* Pods-Desktop CleanerUITests-acknowledgements.markdown */,
+				F946060B818376ECB2BE1A89030D5F97 /* Pods-Desktop CleanerUITests-acknowledgements.plist */,
+				7FA41450D2369D64794E8EE8A6D0543F /* Pods-Desktop CleanerUITests-dummy.m */,
+				F92E73CF6F3A6362343ECF2F4C2B8F0D /* Pods-Desktop CleanerUITests-Info.plist */,
+				C5C3EB7445396CFAFF79ACA0D2FDAD87 /* Pods-Desktop CleanerUITests-umbrella.h */,
+				55C6409B91700191A24E71B2422672F5 /* Pods-Desktop CleanerUITests.debug.xcconfig */,
+				6E1FA61AF583F8B248EB1F5E802EE208 /* Pods-Desktop CleanerUITests.release.xcconfig */,
+			);
+			name = "Pods-Desktop CleanerUITests";
+			path = "Target Support Files/Pods-Desktop CleanerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		16EB14D6DD6FC22AEB048CDB4A0B785D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDD9E92E26DA65710E77B1BC7DC4530 /* Pods-Desktop Cleaner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD7217867C3660743E63B31EA5471FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3937A203493B6E69C0EAA6C5AE567509 /* Pods-Desktop CleanerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CF35B19CD68B154DF0B7DAC38B9A39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3994748FE7E4FC44B45612A48F707F7C /* Pods-Desktop CleanerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDDDDBEE4AA548176AE40DBFD4F22699 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1EEE1B6E2C88FB3827D678DEE21BCF /* SpiceKey-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		992B21B0EA54CAA54AB830D78CC14AA7 /* SpiceKey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEEE44E93ABE7CD1ED405EA8354ACB85 /* Build configuration list for PBXNativeTarget "SpiceKey" */;
+			buildPhases = (
+				DDDDDBEE4AA548176AE40DBFD4F22699 /* Headers */,
+				F6F734460CCDA08D2C7E9D78DE66BA39 /* Sources */,
+				E3A655BC0F386B0C91E4B7F5BC927234 /* Frameworks */,
+				17AD776B342E3D9378DD6AB4DA21B94B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpiceKey;
+			productName = SpiceKey;
+			productReference = B80F607D6956F249921BF7C64060DD8F /* SpiceKey.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACD8D47ED157F805BD77DBB9A36D875B /* Pods-Desktop CleanerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F4271D5A0026D4BE39CF2491332DFBF /* Build configuration list for PBXNativeTarget "Pods-Desktop CleanerUITests" */;
+			buildPhases = (
+				C9CF35B19CD68B154DF0B7DAC38B9A39 /* Headers */,
+				8EACF757ED47E1962354DADD93C219E1 /* Sources */,
+				36332853079152DBA56ECD71BFC5789D /* Frameworks */,
+				D3AE6931ABEC45452F472E95E522EE16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CACB8C73DF143C35F029D0E68102600 /* PBXTargetDependency */,
+			);
+			name = "Pods-Desktop CleanerUITests";
+			productName = "Pods-Desktop CleanerUITests";
+			productReference = 52DB114207ABADD7D7AE2F73DE0D345E /* Pods_Desktop_CleanerUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BBE5549C8EF30EB3445BD7DD21BA471B /* Pods-Desktop CleanerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0FF3A38F95A22DE0085CB16458014E9 /* Build configuration list for PBXNativeTarget "Pods-Desktop CleanerTests" */;
+			buildPhases = (
+				8DD7217867C3660743E63B31EA5471FF /* Headers */,
+				C115055DC3F8E61A25B41F15ABAF8AF1 /* Sources */,
+				A93AAF9D4F9FD9CBEBF1F821E41037E4 /* Frameworks */,
+				19DD352324C9E9307A592D704A1467F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB9EC529F8F59EF8540F88EE2C4ABBA1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Desktop CleanerTests";
+			productName = "Pods-Desktop CleanerTests";
+			productReference = 8AE26E47C400416450F362CF8F5B5B4F /* Pods_Desktop_CleanerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB81AC59C0AB83BD27FBA48B8572FAF1 /* Pods-Desktop Cleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD70C56EB2808C2F6BE5B8824649E26D /* Build configuration list for PBXNativeTarget "Pods-Desktop Cleaner" */;
+			buildPhases = (
+				16EB14D6DD6FC22AEB048CDB4A0B785D /* Headers */,
+				BE1EB93A6F1C584617334985E43C72F3 /* Sources */,
+				8E550715E0630D77B8FBF5EA47897A6B /* Frameworks */,
+				264A34D7820B48F60B1A78771D21C6F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81465B6B950574651826C55E04ADF80E /* PBXTargetDependency */,
+			);
+			name = "Pods-Desktop Cleaner";
+			productName = "Pods-Desktop Cleaner";
+			productReference = 06D0292026996C44DBC4DA774AE73F58 /* Pods_Desktop_Cleaner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 18DEDFBE2CB0509419CA228615D06981 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB81AC59C0AB83BD27FBA48B8572FAF1 /* Pods-Desktop Cleaner */,
+				BBE5549C8EF30EB3445BD7DD21BA471B /* Pods-Desktop CleanerTests */,
+				ACD8D47ED157F805BD77DBB9A36D875B /* Pods-Desktop CleanerUITests */,
+				992B21B0EA54CAA54AB830D78CC14AA7 /* SpiceKey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17AD776B342E3D9378DD6AB4DA21B94B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DD352324C9E9307A592D704A1467F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		264A34D7820B48F60B1A78771D21C6F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3AE6931ABEC45452F472E95E522EE16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EACF757ED47E1962354DADD93C219E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17848D302206083074F8E98FF8E77E5 /* Pods-Desktop CleanerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1EB93A6F1C584617334985E43C72F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70A6333E0AE5E5F17377D5581002B143 /* Pods-Desktop Cleaner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C115055DC3F8E61A25B41F15ABAF8AF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78B73EF86AA367BE49912CA1CEC74166 /* Pods-Desktop CleanerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6F734460CCDA08D2C7E9D78DE66BA39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60D509DDB79A60FCF7770806DD095E80 /* Key.swift in Sources */,
+				0F9B92E39A2BD4637FCAB9A89DA64E8F /* KeyCombination.swift in Sources */,
+				E7E38BE1028B3B2FBEEF6BBF4DF4F051 /* ModifierFlag.swift in Sources */,
+				C1D3BC01390B4F152FAB7EED9698DC6C /* ModifierFlags.swift in Sources */,
+				3E4057FF3A025EAC7B8D65B6E1213E2F /* SpiceKey-dummy.m in Sources */,
+				B28F90E51DCE316742158E7B1D63A030 /* SpiceKey.swift in Sources */,
+				7F63C0535F3A3C518E780242F573A637 /* SpiceKeyManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CACB8C73DF143C35F029D0E68102600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Desktop Cleaner";
+			target = DB81AC59C0AB83BD27FBA48B8572FAF1 /* Pods-Desktop Cleaner */;
+			targetProxy = CB06BC81585F45CF6BA34BC4F103B157 /* PBXContainerItemProxy */;
+		};
+		81465B6B950574651826C55E04ADF80E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SpiceKey;
+			target = 992B21B0EA54CAA54AB830D78CC14AA7 /* SpiceKey */;
+			targetProxy = 0B82319B4E71F0856DFEC1E843773254 /* PBXContainerItemProxy */;
+		};
+		AB9EC529F8F59EF8540F88EE2C4ABBA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Desktop Cleaner";
+			target = DB81AC59C0AB83BD27FBA48B8572FAF1 /* Pods-Desktop Cleaner */;
+			targetProxy = 7111100F9F45AD004F16C6A7E661E7CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034DDF9D5183E9D601DE8C20E1A8824D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 473CF033FCB0487ED0718F2972E3C279 /* Pods-Desktop CleanerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Desktop CleanerTests/Pods-Desktop CleanerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desktop CleanerTests/Pods-Desktop CleanerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1B5E04AAD2B19EC1A37952BFCE0EE4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9714B7E279A6E4EC559F1A0C8EB53828 /* Pods-Desktop Cleaner.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2774BD53228E3830DC2E3F87F135D5E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C6409B91700191A24E71B2422672F5 /* Pods-Desktop CleanerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Desktop CleanerUITests/Pods-Desktop CleanerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desktop CleanerUITests/Pods-Desktop CleanerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42DCA099A01AE396F292A5B7A6ECCEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1FA61AF583F8B248EB1F5E802EE208 /* Pods-Desktop CleanerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Desktop CleanerUITests/Pods-Desktop CleanerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desktop CleanerUITests/Pods-Desktop CleanerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6CEC5923C9DFD1D042A3865AF9A88F67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E8E407C5DEF3C931FCCEBF9750A2AC /* SpiceKey.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SpiceKey/SpiceKey-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SpiceKey/SpiceKey-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/SpiceKey/SpiceKey.modulemap";
+				PRODUCT_MODULE_NAME = SpiceKey;
+				PRODUCT_NAME = SpiceKey;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F8612AA659D76D0B419364ADC3E5436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC421488297AE48D5E30FB32DA194C0B /* Pods-Desktop Cleaner.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97735B90B60C29A8D1118A0462F30A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A9E3A473EF793C6CDC12FB50509E178A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E8E407C5DEF3C931FCCEBF9750A2AC /* SpiceKey.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SpiceKey/SpiceKey-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SpiceKey/SpiceKey-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/SpiceKey/SpiceKey.modulemap";
+				PRODUCT_MODULE_NAME = SpiceKey;
+				PRODUCT_NAME = SpiceKey;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0A5C185E6F96F034A3680A0F734FD8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E4B2536212700BA87C65E873363F3B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F737AEB0B4FDA63FEA30FA90886A48D4 /* Pods-Desktop CleanerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Desktop CleanerTests/Pods-Desktop CleanerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-Desktop CleanerTests/Pods-Desktop CleanerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F4271D5A0026D4BE39CF2491332DFBF /* Build configuration list for PBXNativeTarget "Pods-Desktop CleanerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2774BD53228E3830DC2E3F87F135D5E8 /* Debug */,
+				42DCA099A01AE396F292A5B7A6ECCEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97735B90B60C29A8D1118A0462F30A17 /* Debug */,
+				D0A5C185E6F96F034A3680A0F734FD8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0FF3A38F95A22DE0085CB16458014E9 /* Build configuration list for PBXNativeTarget "Pods-Desktop CleanerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B2536212700BA87C65E873363F3B11 /* Debug */,
+				034DDF9D5183E9D601DE8C20E1A8824D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD70C56EB2808C2F6BE5B8824649E26D /* Build configuration list for PBXNativeTarget "Pods-Desktop Cleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F8612AA659D76D0B419364ADC3E5436 /* Debug */,
+				1B5E04AAD2B19EC1A37952BFCE0EE4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEEE44E93ABE7CD1ED405EA8354ACB85 /* Build configuration list for PBXNativeTarget "SpiceKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E3A473EF793C6CDC12FB50509E178A /* Debug */,
+				6CEC5923C9DFD1D042A3865AF9A88F67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

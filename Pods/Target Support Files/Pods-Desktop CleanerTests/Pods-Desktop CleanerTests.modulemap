@@ -1,0 +1,6 @@
+framework module Pods_Desktop_CleanerTests {
+  umbrella header "Pods-Desktop CleanerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
