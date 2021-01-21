@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		1C61DDD32205C367009F6F52 /* ShortcutField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61DDD22205C367009F6F52 /* ShortcutField.swift */; };
 		1C61DDD52205C479009F6F52 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61DDD42205C479009F6F52 /* DeleteButton.swift */; };
-		1C61DDD92205D5D1009F6F52 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C61DDD62205C76F009F6F52 /* arrow.png */; };
-		1C61DDDA2205D5D1009F6F52 /* delete0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C61DDD82205C76F009F6F52 /* delete0.png */; };
-		1C61DDDB2205D5D1009F6F52 /* delete1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C61DDD72205C76F009F6F52 /* delete1.png */; };
 		1C61DDDD2205E852009F6F52 /* rules.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C61DDDC2205E852009F6F52 /* rules.json */; };
 		1C61DDDF2205E897009F6F52 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C61DDDE2205E897009F6F52 /* Rule.swift */; };
 		1CFBF43322002BD300175297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFBF43222002BD300175297 /* AppDelegate.swift */; };
@@ -49,9 +46,6 @@
 		0C27499638B4EAE02043CAC5 /* Pods_Desktop_Cleaner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desktop_Cleaner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C61DDD22205C367009F6F52 /* ShortcutField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutField.swift; sourceTree = "<group>"; };
 		1C61DDD42205C479009F6F52 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
-		1C61DDD62205C76F009F6F52 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
-		1C61DDD72205C76F009F6F52 /* delete1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete1.png; sourceTree = "<group>"; };
-		1C61DDD82205C76F009F6F52 /* delete0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete0.png; sourceTree = "<group>"; };
 		1C61DDDC2205E852009F6F52 /* rules.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rules.json; sourceTree = "<group>"; };
 		1C61DDDE2205E897009F6F52 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		1CFBF42F22002BD300175297 /* Desktop Cleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desktop Cleaner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,9 +148,6 @@
 		1CFBF43122002BD300175297 /* Desktop Cleaner */ = {
 			isa = PBXGroup;
 			children = (
-				1C61DDD62205C76F009F6F52 /* arrow.png */,
-				1C61DDD82205C76F009F6F52 /* delete0.png */,
-				1C61DDD72205C76F009F6F52 /* delete1.png */,
 				1CFBF46022004C4D00175297 /* Desktop Cleaner.entitlements */,
 				1CFBF4D12204C76500175297 /* Extensions.swift */,
 				1CFBF45E22002C2700175297 /* FileIO+.swift */,
@@ -269,7 +260,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Takuto Nakamura";
 				TargetAttributes = {
 					1CFBF42E22002BD300175297 = {
@@ -319,10 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CFBF43722002BD500175297 /* Assets.xcassets in Resources */,
-				1C61DDDA2205D5D1009F6F52 /* delete0.png in Resources */,
-				1C61DDDB2205D5D1009F6F52 /* delete1.png in Resources */,
 				1C61DDDD2205E852009F6F52 /* rules.json in Resources */,
-				1C61DDD92205D5D1009F6F52 /* arrow.png in Resources */,
 				1CFBF43A22002BD500175297 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,16 +360,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SpiceKey/SpiceKey.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpiceKey.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-Desktop Cleaner/Pods-Desktop Cleaner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -613,6 +596,8 @@
 			baseConfigurationReference = 7F28EB5201B93A1D69BC9EEC /* Pods-Desktop Cleaner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Desktop Cleaner/Desktop Cleaner.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VJ5N2X84K8;
@@ -636,6 +621,8 @@
 			baseConfigurationReference = 84454CD91FC58370FD489ED9 /* Pods-Desktop Cleaner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Desktop Cleaner/Desktop Cleaner.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = VJ5N2X84K8;

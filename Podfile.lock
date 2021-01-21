@@ -1,16 +1,16 @@
 PODS:
-  - SpiceKey (1.5)
+  - SpiceKey (1.7)
 
 DEPENDENCIES:
   - SpiceKey
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - SpiceKey
 
 SPEC CHECKSUMS:
-  SpiceKey: de3c5f4073df3da3d9f5cde136d26bcc33ff8261
+  SpiceKey: 51b97b5451cea4e6cbde4838bdaaab6bf3f6f86b
 
 PODFILE CHECKSUM: 7af01d7954efbd69a3d5ce7ba5e0c3bc6df79271
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.8.4
